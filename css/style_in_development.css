@@ -1,0 +1,287 @@
+/***********************************************/
+/* Global Styles                               */
+/***********************************************/
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.italic {
+    font-style: italic;
+}
+
+
+
+/***********************************************/
+/* Introduction Styles                         */
+/***********************************************/
+.intro {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: #111;
+    min-height: 600px;
+    padding: 0;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+.intro h1,
+.intro h2,
+.intro h3,
+.intro p {
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+
+
+/***********************************************/
+/* Overlay Styles                              */
+/***********************************************/
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #000;
+    z-index: 2;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+
+
+
+/***********************************************/
+/* Content Styles                              */
+/***********************************************/
+.content {
+    position: relative;
+    width: 100%;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    z-index: 10;
+}
+
+
+
+/***********************************************/
+/* Navigarion Bar Styles                       */
+/***********************************************/
+.header {
+    width: 100%;
+    background: #fff;
+    z-index: 1003;
+}
+
+.navbar {
+    font-family: "Cardo", "Times New Roman", Times, serif;
+    font-style: italic;
+    min-height: 40px;
+    margin-bottom: 0;
+    border-bottom: 1px solid transparent;
+}
+
+.navbar-brand {
+    float: left;
+    padding: 0 15px;
+    font-size: 20px;
+    line-height: 22px;
+    height: 40px;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+    text-decoration: none;
+}
+
+.navbar-collapse {
+    position: relative;
+    z-index: 1003;
+    background: #fff;
+}
+
+.navbar-collapse a {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.navbar-header {
+    position: relative;
+    z-index: 1004;
+}
+
+.nav {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.nav>li>a {
+    padding: 10px 15px;
+}
+
+.nav>li>a:hover,
+.nav>li>a:focus {
+    background-color: #eeeeee;
+}
+
+.nav>li.disabled>a {
+    color: #999999;
+}
+
+.nav>li.disabled>a:hover,
+.nav>li.disabled>a:focus {
+    color: #999999;
+}
+
+.nav .open>a,
+.nav .open>a:hover,
+.nav .open>a:focus {
+    background-color: #eeeeee;
+    border-color: #444444;
+}
+
+/*
+.nav-tabs {
+  border-bottom: 1px solid #dddddd;
+}
+
+.nav-tabs > li > a {
+  line-height: 1.42857143;
+  border-radius: 0 0 0 0;
+}
+
+.nav-tabs > li > a:hover {
+  border-color: #eeeeee #eeeeee #dddddd;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #555555;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+}
+
+.nav-pills > li > a {
+  border-radius: 0;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: #ffffff;
+  background-color: #444444;
+}
+
+.nav-tabs-justified > li > a {
+  border-radius: 0;
+}
+
+.nav-tabs-justified > .active > a,
+.nav-tabs-justified > .active > a:hover,
+.nav-tabs-justified > .active > a:focus {
+  border: 1px solid #dddddd;
+}
+*/
+
+
+
+/***********************************************/
+/* Heading Styles                              */
+/***********************************************/
+/*
+.heading {
+  margin-bottom: 40px;
+}
+
+.heading:after {
+  content: " ";
+  display: block;
+  width: 100px;
+  height: 1px;
+  margin: 20px 0 20px;
+  background: #555555;
+}
+*/
+
+
+
+/***********************************************/
+/* Media Query min-width 768px                 */
+/***********************************************/
+@media (min-width: 768px) {
+    /* Navigation Styles */
+    /*
+	.nav-tabs-justified > li > a {
+		border-bottom: 1px solid #dddddd;
+		border-radius: 0 0 0 0;
+	}
+	
+	.nav-tabs-justified > .active > a,
+	.nav-tabs-justified > .active > a:hover,
+	.nav-tabs-justified > .active > a:focus {
+		border-bottom-color: #ffffff;
+	}
+	
+	.navbar {
+		border-radius: 0;
+	}
+*/
+}
+
+
+
+
+/***********************************************/
+/* Media Query min-width 992px                 */
+/***********************************************/
+@media (min-width: 992px) {
+
+    /* Global Styles */
+    section {
+        padding: 150px 0;
+    }
+
+    /* Introduction Styles */
+    .intro p {
+        font-size: 22px;
+    }
+}
+
+
+
+/***********************************************/
+/* Media Query max-width 991px                 */
+/***********************************************/
+@media (max-width: 991px) {
+
+    /* Global Styles */
+    section {
+        padding: 60px 0;
+    }
+
+    /* Content Styles */
+    .content {
+        position: relative;
+        padding: 80px 0;
+        top: 0;
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
